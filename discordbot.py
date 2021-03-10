@@ -34,4 +34,4 @@ async def on_message(message):
             await message.channel.send("%s%s%s" % (A, B, C))
             return
 
-client.run(TOKEN)
+client.run('ODE5MTY5ODM2MzU3NjQ4NDQ0.YEitXA.SOWK4_vAAJXaALhdMgxpJWuPivM')

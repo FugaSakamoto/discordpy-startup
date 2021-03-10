@@ -1,8 +1,9 @@
 import random
-import asyncio #sleepを使うのに必要
-import discord ##discordでBOTを使うのにこれが必ずいる
+import asyncio
+import discord
 
 token = os.environ['DISCORD_BOT_TOKEN']
+client = discord.Client()
 
 @client.event
 async def on_message(message):
@@ -19,4 +20,4 @@ async def on_message(message):
     else:
       await client.send_message(message.channel, "%s%s%s" % (A, B, C))
 
-bot.run(token)
+client.run(token)

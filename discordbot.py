@@ -9,6 +9,10 @@ TOKEN = os.environ['DISCORD_BOT_TOKEN']
 client = discord.Client()
 
 @client.event
+async def on_ready():
+    await message.channel.send("Pフィーバー戦姫絶唱シンフォギア2")
+
+@client.event
 async def on_message(message):
     if message.content.startswith("🎰"):
         kakuritu = random.randint(1, 199)

@@ -17,10 +17,12 @@ async def on_message(message):
         B = random.choice(slot_list)
         C = random.choice(slot_list)
         if int(kakuritu) == int(1):
-              await client.send_message(message.channel, "ボーナス確定！！！")
-              await asyncio.sleep(3)
-              await client.send_message(message.channel, ':seven:', ':seven:', ':seven:')
+            await client.send_message(message.channel, "ボーナス確定！！！")
+            await asyncio.sleep(3)
+            await client.send_message(message.channel, ':seven:', ':seven:', ':seven:')
+            return
         else:
-              await client.send_message(message.channel, "%s%s%s" % (A, B, C))
+            await client.send_message(message.channel, "%s%s%s" % (A, B, C))
+            return
 
 client.run(token)

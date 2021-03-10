@@ -10,7 +10,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    await message.channel.send("Pフィーバー戦姫絶唱シンフォギア2")
+    await message.channel.send("Pフィーバー戦姫絶唱シンフォギア2 起動しました")
 
 @client.event
 async def on_message(message):
